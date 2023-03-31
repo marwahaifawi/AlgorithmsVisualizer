@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <title>Sorting Algorithms Visualizer</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sorting Algorithms Visualizer</h1>
+        <div class="rowContainer">
+            <div class="gridDisplay">
+                <label for="algorithm">Algorithm :</label>
+                <select id="algorithm">
+                    <option value="bubble">Bubble Sort</option>
+                    <option value="selection">Selection Sort</option>
+                    <option value="quickSort">Quick Sort</option>
+                </select>
+            </div>
+            <div class="gridDisplay">
+                <label for="length">Array Size :</label>
+                <input type="range" id="length" value="5" min="5" max="100" class="slider">
+                <label id="valueLabel" for="value">5</label>
+            </div>
+
+            <button id="randomize">Randomize</button>
+            <button id="solve">Solve</button>
+            <div class="gridDisplay"> <label class="redLabel">Red: Comparing</label>
+                <label class="greenLabel">Green: Swapping</label>
+            </div>
+        </div>
+        <br>
+        <canvas id="canvasDisplay"></canvas>
+    </div>
+    <script src="column.js"></script>
+    <script src="index.js"></script>
+    <script>
+        const lengthSlider = document.getElementById('length');
+        const valueLabel = document.getElementById('valueLabel');
+        lengthSlider.addEventListener('input', () => {
+            valueLabel.textContent = lengthSlider.value;
+        });
+    </script>
+</body>
+
+</html>

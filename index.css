@@ -1,0 +1,70 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Sofia", sans-serif;
+
+}
+
+h1 {
+    color: #2196F3;
+    text-align: center;
+}
+
+.rowContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    column-gap: 20px;
+
+}
+
+.gridDisplay {
+    display: grid;
+    justify-items: center;
+}
+
+.slider {
+    width: 150px;
+}
+
+button {
+    margin: 0 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #1C1D20;
+    color: #1C1D20;
+    font-family: "Sofia", sans-serif;
+    font-size: 16px;
+    width: 145px;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+button:hover{
+    background-color: #2196F3;
+    color: #fff;
+
+}
+
+#canvasDisplay {
+    border: 1px solid #2196F3;
+    background-color: #1C1D20;
+}
+
+#algorithm {
+    font-size: 16px;
+    background-color: #fff;
+    color: #2196F3;
+    border: 1px solid #2196F3;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.redLabel{
+    color: red;
+}
+.greenLabel{
+    color: green;
+}
