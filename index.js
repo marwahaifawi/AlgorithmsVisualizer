@@ -106,7 +106,6 @@ function quickSort(array) {
         moves.push({ indices: [i, j], type: "swap" });
       }
     }
-    moves.push({ indices: [i+1, high], type: "compare" });
     [array[i + 1], array[high]] = [array[high], array[i + 1]];
     moves.push({ indices: [i + 1, high], type: "swap" });
     return i + 1;
