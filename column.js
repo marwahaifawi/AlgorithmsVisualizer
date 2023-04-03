@@ -15,7 +15,7 @@ class Column {
       this.height
     );
     ctx.fillStyle = "#fff";
-    ctx.font = "12px Arial";
+    ctx.font = "18px 'Edu NSW ACT Foundation', cursive";
     ctx.fillText(
       this.height.toString(),
       this.x - this.width / 2 + 5,

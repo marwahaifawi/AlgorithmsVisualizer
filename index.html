@@ -6,7 +6,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Foundation&family=IM+Fell+Great+Primer&family=Inter:wght@400;500;700&family=Pacifico&family=Roboto:wght@300&display=swap"
+        rel="stylesheet">
     <title>Sorting Algorithms Visualizer</title>
 </head>
 
@@ -19,15 +23,25 @@
                 <select id="algorithm">
                     <option value="bubble">Bubble Sort</option>
                     <option value="selection">Selection Sort</option>
-                    <option value="quickSort">Quick Sort</option>
+                    <option value="quick">Quick Sort</option>
+                    <option value="insertion">Insertion Sort</option>
+                    <option value="heap">Heap Sort</option>
+                    <option value="gnome">Gnome Sort</option>
+                    <option value="comb">Comb Sort</option>
+                    <option value="oddEven">Odd-Even Sort</option>
+                    <option value="shell">Shell Sort</option>
                 </select>
             </div>
             <div class="gridDisplay">
                 <label for="length">Array Size :</label>
                 <input type="range" id="length" value="5" min="5" max="100" class="slider">
-                <label id="valueLabel" for="value">5</label>
+                <label id="valueLabel1" for="value">5</label>
             </div>
-
+            <div class="gridDisplay">
+                <label for="length">Sorting Speed:</label>
+                <input type="range" id="speed" value="1" min="1" max="3" class="slider">
+                <label id="valueLabel2" for="value">x1</label>
+            </div>
             <button id="randomize">Randomize</button>
             <button id="solve">Solve</button>
             <div class="gridDisplay"> <label class="redLabel">Red: Comparing</label>
@@ -35,17 +49,14 @@
             </div>
         </div>
         <br>
+        <div id="description" class="gridDisplay">
+            <p>Bubble sort repeatedly steps through the list, compares adjacent elements and swaps them if they are in
+                the wrong order.</p>
+        </div>
         <canvas id="canvasDisplay"></canvas>
     </div>
     <script src="column.js"></script>
     <script src="index.js"></script>
-    <script>
-        const lengthSlider = document.getElementById('length');
-        const valueLabel = document.getElementById('valueLabel');
-        lengthSlider.addEventListener('input', () => {
-            valueLabel.textContent = lengthSlider.value;
-        });
-    </script>
 </body>
 
 </html>
