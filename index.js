@@ -332,7 +332,7 @@ function animating(moves) {
   drawArray(array, [move]);
   if (speedSlider.value == 1) speed = 400;
   else if (speedSlider.value == 2) speed = 100;
-  else speed = 10;
+  else speed = 5;
   setTimeout(function () {
     animating(moves);
   }, speed);
