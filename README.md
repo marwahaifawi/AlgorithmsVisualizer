@@ -62,4 +62,4 @@ The Sorting Visualizer supports the following sorting algorithms:
  
 ## Deployment
 
-You can access the Sorting Algorithms Visualizer application https://marwahaifawi.github.io/AlgorithmsVisualizer/.
+You can access the Sorting Algorithms Visualizer website https://marwahaifawi.github.io/AlgorithmsVisualizer/.
